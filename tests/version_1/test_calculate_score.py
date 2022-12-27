@@ -4,21 +4,21 @@ from ten_thousand.game_logic import GameLogic
 pytestmark = [pytest.mark.version_1]
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_single_five():
     actual = GameLogic.calculate_score((5,))
     expected = 50
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_single_one():
     actual = GameLogic.calculate_score((1,))
     expected = 100
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_two_fives():
     actual = GameLogic.calculate_score((5, 5))
     expected = 100
@@ -109,7 +109,7 @@ def test_six_ones():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 @pytest.mark.parametrize(
     "test_input,expected",
     [
